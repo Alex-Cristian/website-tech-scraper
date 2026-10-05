@@ -1,0 +1,12 @@
+.venv/
+.venv-check/
+__pycache__/
+*.pyc
+
+.env
+.env.*
+!.env.example
+
+*.bak
+*.tmp
+openai_debug.json

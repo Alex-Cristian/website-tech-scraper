@@ -1,0 +1,471 @@
+{
+  "Shopify": {
+    "category": "Ecommerce",
+    "patterns": {
+      "html": [
+        "Shopify\\.theme",
+        "cdn\\.shopify\\.com",
+        "myshopify\\.com"
+      ],
+      "scripts": [
+        "cdn\\.shopify\\.com",
+        "shopifycloud"
+      ],
+      "headers": [
+        "x-shopid",
+        "x-shopify-stage"
+      ],
+      "cookies": [
+        "_shopify_s",
+        "_shopify_y"
+      ]
+    }
+  },
+  "WooCommerce": {
+    "category": "Ecommerce",
+    "patterns": {
+      "html": [
+        "woocommerce",
+        "wc-ajax",
+        "woocommerce-page"
+      ],
+      "scripts": [
+        "woocommerce",
+        "wc-add-to-cart"
+      ],
+      "cookies": [
+        "woocommerce_cart_hash",
+        "wp_woocommerce_session"
+      ]
+    }
+  },
+  "Magento": {
+    "category": "Ecommerce",
+    "patterns": {
+      "html": [
+        "Magento_Ui",
+        "Magento_Customer",
+        "mage/cookies"
+      ],
+      "scripts": [
+        "static/version[^/]+/frontend/",
+        "requirejs/require\\.js"
+      ],
+      "headers": [
+        "x-magento-cache-debug",
+        "x-magento-tags-pattern"
+      ],
+      "cookies": [
+        "private_content_version",
+        "mage-cache-storage"
+      ]
+    }
+  },
+  "BigCommerce": {
+    "category": "Ecommerce",
+    "patterns": {
+      "html": [
+        "cdn\\d+\\.bigcommerce\\.com",
+        "stencil-utils"
+      ],
+      "scripts": [
+        "bigcommerce\\.com",
+        "stencil-utils"
+      ]
+    }
+  },
+  "WordPress": {
+    "category": "CMS",
+    "patterns": {
+      "html": [
+        "wp-content",
+        "wp-includes",
+        "content=[\"']WordPress"
+      ],
+      "scripts": [
+        "wp-content",
+        "wp-includes"
+      ],
+      "meta": [
+        "WordPress"
+      ]
+    }
+  },
+  "Drupal": {
+    "category": "CMS",
+    "patterns": {
+      "html": [
+        "Drupal\\.settings",
+        "data-drupal-selector",
+        "/sites/default/files/"
+      ],
+      "scripts": [
+        "/core/misc/drupal\\.js",
+        "drupalSettings"
+      ],
+      "headers": [
+        "x-generator:\\s*Drupal"
+      ],
+      "cookies": [
+        "SSESS[a-f0-9]+",
+        "SESS[a-f0-9]+"
+      ]
+    }
+  },
+  "Joomla": {
+    "category": "CMS",
+    "patterns": {
+      "html": [
+        "content=[\"']Joomla!",
+        "/media/system/js/"
+      ],
+      "scripts": [
+        "/media/system/js/",
+        "joomla"
+      ]
+    }
+  },
+  "Wix": {
+    "category": "Website Builder",
+    "patterns": {
+      "html": [
+        "wixstatic\\.com",
+        "wix-code-sdk",
+        "_wix_browser_sess"
+      ],
+      "scripts": [
+        "static\\.parastorage\\.com",
+        "wixstatic\\.com"
+      ],
+      "headers": [
+        "x-wix-request-id"
+      ]
+    }
+  },
+  "Squarespace": {
+    "category": "Website Builder",
+    "patterns": {
+      "html": [
+        "static1\\.squarespace\\.com",
+        "squarespace-cdn\\.com"
+      ],
+      "scripts": [
+        "squarespace\\.com",
+        "squarespace-cdn\\.com"
+      ]
+    }
+  },
+  "Webflow": {
+    "category": "Website Builder",
+    "patterns": {
+      "html": [
+        "data-wf-page",
+        "data-wf-site",
+        "website-files\\.com"
+      ],
+      "scripts": [
+        "webflow\\.js",
+        "website-files\\.com"
+      ]
+    }
+  },
+  "Google Analytics": {
+    "category": "Analytics",
+    "patterns": {
+      "html": [
+        "gtag\\s*\\(",
+        "GoogleAnalyticsObject",
+        "google-analytics\\.com"
+      ],
+      "scripts": [
+        "google-analytics\\.com/analytics\\.js",
+        "googletagmanager\\.com/gtag/js"
+      ]
+    }
+  },
+  "Google Tag Manager": {
+    "category": "Tag Manager",
+    "patterns": {
+      "html": [
+        "GTM-[A-Z0-9]+",
+        "googletagmanager\\.com/ns\\.html"
+      ],
+      "scripts": [
+        "googletagmanager\\.com/gtm\\.js"
+      ]
+    }
+  },
+  "Meta Pixel": {
+    "category": "Advertising",
+    "patterns": {
+      "html": [
+        "fbq\\s*\\(",
+        "facebook\\.com/tr"
+      ],
+      "scripts": [
+        "connect\\.facebook\\.net/.+/fbevents\\.js"
+      ]
+    }
+  },
+  "Hotjar": {
+    "category": "Analytics",
+    "patterns": {
+      "html": [
+        "hj\\s*\\(",
+        "_hjSettings",
+        "hotjar\\.com"
+      ],
+      "scripts": [
+        "static\\.hotjar\\.com",
+        "script\\.hotjar\\.com"
+      ],
+      "cookies": [
+        "_hjSession",
+        "_hjAbsoluteSessionInProgress"
+      ]
+    }
+  },
+  "Microsoft Clarity": {
+    "category": "Analytics",
+    "patterns": {
+      "html": [
+        "clarity\\s*\\(",
+        "clarity\\.ms"
+      ],
+      "scripts": [
+        "clarity\\.ms/tag/"
+      ],
+      "cookies": [
+        "_clck",
+        "_clsk"
+      ]
+    }
+  },
+  "Klaviyo": {
+    "category": "Marketing Automation",
+    "patterns": {
+      "html": [
+        "klaviyo",
+        "_learnq"
+      ],
+      "scripts": [
+        "static\\.klaviyo\\.com",
+        "a\\.klaviyo\\.com"
+      ],
+      "cookies": [
+        "__kla_id"
+      ]
+    }
+  },
+  "Mailchimp": {
+    "category": "Email Marketing",
+    "patterns": {
+      "html": [
+        "mailchimp",
+        "mc_embed_signup"
+      ],
+      "scripts": [
+        "chimpstatic\\.com",
+        "list-manage\\.com"
+      ],
+      "cookies": [
+        "MCPopupClosed",
+        "MCPopupSubscribed"
+      ]
+    }
+  },
+  "Segment": {
+    "category": "Analytics",
+    "patterns": {
+      "html": [
+        "analytics\\.load\\s*\\(",
+        "analytics\\.page\\s*\\("
+      ],
+      "scripts": [
+        "cdn\\.segment\\.com",
+        "cdn\\.segment\\.io"
+      ],
+      "cookies": [
+        "ajs_anonymous_id",
+        "ajs_user_id"
+      ]
+    }
+  },
+  "React": {
+    "category": "JavaScript Framework",
+    "patterns": {
+      "html": [
+        "data-reactroot",
+        "data-reactid",
+        "__REACT_DEVTOOLS_GLOBAL_HOOK__"
+      ],
+      "scripts": [
+        "react(?:\\.production)?(?:\\.min)?\\.js",
+        "react-dom"
+      ]
+    }
+  },
+  "Next.js": {
+    "category": "JavaScript Framework",
+    "patterns": {
+      "html": [
+        "__NEXT_DATA__",
+        "/_next/static/"
+      ],
+      "scripts": [
+        "/_next/static/",
+        "_next/static/chunks"
+      ]
+    }
+  },
+  "Vue.js": {
+    "category": "JavaScript Framework",
+    "patterns": {
+      "html": [
+        "data-v-[a-f0-9]+",
+        "__VUE__"
+      ],
+      "scripts": [
+        "vue(?:\\.runtime)?(?:\\.global)?(?:\\.min)?\\.js"
+      ]
+    }
+  },
+  "Nuxt.js": {
+    "category": "JavaScript Framework",
+    "patterns": {
+      "html": [
+        "__NUXT__",
+        "/_nuxt/"
+      ],
+      "scripts": [
+        "/_nuxt/",
+        "nuxt\\.js"
+      ]
+    }
+  },
+  "Angular": {
+    "category": "JavaScript Framework",
+    "patterns": {
+      "html": [
+        "ng-version=[\"']",
+        "ng-app=[\"']",
+        "_nghost-[a-z]+-\\d+"
+      ],
+      "scripts": [
+        "angular(?:\\.min)?\\.js",
+        "main\\.[a-f0-9]+\\.js"
+      ]
+    }
+  },
+  "jQuery": {
+    "category": "JavaScript Library",
+    "patterns": {
+      "html": [
+        "jQuery\\s*\\(",
+        "\\$\\s*\\(document\\)"
+      ],
+      "scripts": [
+        "jquery(?:-[\\d.]+)?(?:\\.min)?\\.js"
+      ]
+    }
+  },
+  "Bootstrap": {
+    "category": "UI Framework",
+    "patterns": {
+      "scripts": [
+        "bootstrap(?:\\.bundle)?(?:\\.min)?\\.js"
+      ],
+      "stylesheets": [
+        "bootstrap(?:\\.min)?\\.css"
+      ]
+    }
+  },
+  "Tailwind CSS": {
+    "category": "UI Framework",
+    "patterns": {
+      "html": [
+        "tailwind"
+      ],
+      "scripts": [
+        "cdn\\.tailwindcss\\.com"
+      ],
+      "stylesheets": [
+        "tailwind(?:\\.min)?\\.css"
+      ]
+    }
+  },
+  "Cloudflare": {
+    "category": "CDN",
+    "patterns": {
+      "html": [
+        "cdn-cgi/",
+        "cloudflare"
+      ],
+      "scripts": [
+        "cdnjs\\.cloudflare\\.com"
+      ],
+      "headers": [
+        "cf-ray",
+        "cf-cache-status",
+        "server:\\s*cloudflare"
+      ],
+      "cookies": [
+        "__cf_bm",
+        "cf_clearance"
+      ]
+    }
+  },
+  "Vercel": {
+    "category": "Hosting",
+    "patterns": {
+      "html": [
+        "vercel\\.app"
+      ],
+      "headers": [
+        "x-vercel-id",
+        "x-vercel-cache",
+        "server:\\s*Vercel"
+      ]
+    }
+  },
+  "Nginx": {
+    "category": "Web Server",
+    "patterns": {
+      "headers": [
+        "server:\\s*nginx"
+      ]
+    }
+  },
+  "Apache": {
+    "category": "Web Server",
+    "patterns": {
+      "headers": [
+        "server:\\s*Apache"
+      ]
+    }
+  },
+  "reCAPTCHA": {
+    "category": "Web Security",
+    "patterns": {
+      "scripts": [
+        "^(?:https?:)?//www\\.google\\.com/recaptcha/api\\.js(?:\\?|$)"
+      ]
+    }
+  },
+  "Google Maps JavaScript API": {
+    "category": "Mapping",
+    "patterns": {
+      "scripts": [
+        "^(?:https?:)?//maps\\.googleapis\\.com/maps/api/js(?:\\?|$)"
+      ]
+    }
+  },
+  "Weebly": {
+    "category": "Website Builder",
+    "patterns": {
+      "scripts": [
+        "^(?:https?:)?//cdn2\\.editmysite\\.com/js/lang/en/stl\\.js(?:\\?|$)"
+      ]
+    }
+  }
+}
